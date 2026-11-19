@@ -29,6 +29,7 @@
           <li class="nav__item"><a href="#hero" class="nav__link nav__link--active">Inicio</a></li>
           <li class="nav__item"><a href="#sobre-nosotros" class="nav__link">Sobre PRENDER</a></li>
           <li class="nav__item"><a href="#catalogo" class="nav__link">Emprendimientos</a></li>
+          <li class="nav__item"><a href="#testimonios" class="nav__link">Testimonios</a></li>
           <li class="nav__item"><a href="#sumate" class="nav__link">Sumá tu Proyecto</a></li>
         </ul>
       </nav>
@@ -208,9 +209,156 @@
       </div>
     </section>
 
+    <!-- =====================================================================
+         SECCIÓN 5: TESTIMONIOS DE EMPRENDEDORES
+         Archivo CSS: css/components/testimonios.css
+         Archivo JS:  js/modules/testimonios.js
+         ===================================================================== -->
+    <section class="section testimonios" id="testimonios">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Experiencias PRENDER</span>
+          <h2 class="section-title">Historias que inspiran</h2>
+          <p class="section-subtitle">
+            Conocé cómo distintos emprendedores hacen crecer sus proyectos y aprovechan la plataforma.
+          </p>
+        </header>
+
+        <div class="testimonios__carousel" id="testimonios-carousel">
+          <div
+            class="testimonios__viewport"
+            id="testimonios-viewport"
+            role="region"
+            aria-roledescription="carrusel"
+            aria-label="Testimonios de emprendedores"
+          >
+            <div class="testimonios__track" id="testimonios-track">
+              <article class="testimonios__card" role="group" aria-roledescription="diapositiva" aria-label="Testimonio 1 de 6">
+                <blockquote class="testimonios__quote">
+                  <p>“Empezar con mi proyecto fue un desafío. En PRENDER pude contar qué hago y acercar mis productos a personas que todavía no me conocían.”</p>
+                </blockquote>
+                <footer class="testimonios__author">
+                  <span class="testimonios__logo" aria-hidden="true">RS</span>
+                  <div>
+                    <h3 class="testimonios__name">Rocío Suárez</h3>
+                    <p class="testimonios__business">Raíz Serena</p>
+                  </div>
+                </footer>
+              </article>
+
+              <article class="testimonios__card" role="group" aria-roledescription="diapositiva" aria-label="Testimonio 2 de 6">
+                <blockquote class="testimonios__quote">
+                  <p>“Mi taller fue creciendo de a poco. La plataforma me ayudó a ordenar la presentación de mis trabajos y compartirlos con más gente.”</p>
+                </blockquote>
+                <footer class="testimonios__author">
+                  <span class="testimonios__logo" aria-hidden="true">TS</span>
+                  <div>
+                    <h3 class="testimonios__name">Julián Ferreyra</h3>
+                    <p class="testimonios__business">Taller Sur</p>
+                  </div>
+                </footer>
+              </article>
+
+              <article class="testimonios__card" role="group" aria-roledescription="diapositiva" aria-label="Testimonio 3 de 6">
+                <blockquote class="testimonios__quote">
+                  <p>“A través de PRENDER pude mostrar mis productos y explicar cómo trabajo. Me resultó una forma sencilla de darle más visibilidad a mi emprendimiento.”</p>
+                </blockquote>
+                <footer class="testimonios__author">
+                  <span class="testimonios__logo" aria-hidden="true">DN</span>
+                  <div>
+                    <h3 class="testimonios__name">Micaela Ríos</h3>
+                    <p class="testimonios__business">Dulce Nube</p>
+                  </div>
+                </footer>
+              </article>
+
+              <article class="testimonios__card" role="group" aria-roledescription="diapositiva" aria-label="Testimonio 4 de 6">
+                <blockquote class="testimonios__quote">
+                  <p>“Con mi emprendimiento aprendí a resolver cada etapa con paciencia. Tener un espacio en PRENDER me permite presentar el proyecto de manera clara.”</p>
+                </blockquote>
+                <footer class="testimonios__author">
+                  <span class="testimonios__logo" aria-hidden="true">LN</span>
+                  <div>
+                    <h3 class="testimonios__name">Tomás Acuña</h3>
+                    <p class="testimonios__business">Línea Norte</p>
+                  </div>
+                </footer>
+              </article>
+
+              <article class="testimonios__card" role="group" aria-roledescription="diapositiva" aria-label="Testimonio 5 de 6">
+                <blockquote class="testimonios__quote">
+                  <p>“Mi proyecto nació de algo que disfruto hacer. PRENDER me dio un lugar para compartir esa historia junto con los productos que preparo.”</p>
+                </blockquote>
+                <footer class="testimonios__author">
+                  <span class="testimonios__logo" aria-hidden="true">PH</span>
+                  <div>
+                    <h3 class="testimonios__name">Camila Benítez</h3>
+                    <p class="testimonios__business">Punto de Hilo</p>
+                  </div>
+                </footer>
+              </article>
+
+              <article class="testimonios__card" role="group" aria-roledescription="diapositiva" aria-label="Testimonio 6 de 6">
+                <blockquote class="testimonios__quote">
+                  <p>“Cada encargo me enseña algo nuevo. En PRENDER puedo explicar el valor del trabajo artesanal y facilitar que más personas conozcan mi emprendimiento.”</p>
+                </blockquote>
+                <footer class="testimonios__author">
+                  <span class="testimonios__logo" aria-hidden="true">MV</span>
+                  <div>
+                    <h3 class="testimonios__name">Nicolás Duarte</h3>
+                    <p class="testimonios__business">Madera Viva</p>
+                  </div>
+                </footer>
+              </article>
+            </div>
+          </div>
+
+          <div class="testimonios__controls" aria-label="Controles del carrusel">
+            <button
+              class="testimonios__arrow"
+              type="button"
+              data-testimonios-prev
+              aria-label="Ver testimonio anterior"
+              aria-controls="testimonios-track"
+            >
+              <span aria-hidden="true">&larr;</span>
+            </button>
+            <button
+              class="testimonios__toggle"
+              type="button"
+              data-testimonios-toggle
+              aria-label="Pausar carrusel"
+              aria-controls="testimonios-track"
+              aria-pressed="false"
+            >
+              <svg class="testimonios__toggle-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  class="testimonios__toggle-play"
+                  d="M8 5v14l11-7z"
+                ></path>
+                <g class="testimonios__toggle-pause">
+                  <rect x="6" y="5" width="4" height="14" rx="1"></rect>
+                  <rect x="14" y="5" width="4" height="14" rx="1"></rect>
+                </g>
+              </svg>
+            </button>
+            <button
+              class="testimonios__arrow"
+              type="button"
+              data-testimonios-next
+              aria-label="Ver siguiente testimonio"
+              aria-controls="testimonios-track"
+            >
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- =====================================================================
-         SECCIÓN 5: SUMÁ TU EMPRENDIMIENTO (FORMULARIO HTML)
+         SECCIÓN 6: SUMÁ TU EMPRENDIMIENTO (FORMULARIO HTML)
          Responsable: Estudiante 5
          Archivo CSS: css/components/sumate.css
          Archivo JS:  js/modules/form.js
@@ -355,7 +503,7 @@
 
 
   <!-- =======================================================================
-       SECCIÓN 6: MODAL DE DETALLE DE EMPRENDIMIENTO
+       SECCIÓN 7: MODAL DE DETALLE DE EMPRENDIMIENTO
        Responsable: Estudiante 6 / Integrador
        Archivo CSS: css/components/modal-detalle.css
        Archivo JS:  js/modules/modal.js
@@ -405,7 +553,7 @@
 
 
   <!-- =======================================================================
-       SECCIÓN 7: FOOTER INSTITUCIONAL Y CRÉDITOS
+       SECCIÓN 8: FOOTER INSTITUCIONAL
        Responsable: Estudiante 7
        Archivo CSS: css/components/footer.css
        ======================================================================= -->
@@ -429,6 +577,7 @@
             <li><a href="#hero" class="footer__link">Inicio</a></li>
             <li><a href="#sobre-nosotros" class="footer__link">Sobre PRENDER</a></li>
             <li><a href="#catalogo" class="footer__link">Emprendimientos</a></li>
+            <li><a href="#testimonios" class="footer__link">Testimonios</a></li>
             <li><a href="#sumate" class="footer__link">Sumar mi Proyecto</a></li>
           </ul>
         </div>
@@ -441,26 +590,37 @@
             <li><a href="#sobre-nosotros" class="footer__link">Cursos y Talleres</a></li>
             <li><a href="#sumate" class="footer__link">Bolsa de Trabajo</a></li>
           </ul>
-        </div>
 
-        <!-- Columna 4: Créditos a los Cursos del CFP408 -->
-        <div class="footer__col">
-          <h3 class="footer__col-title">Créditos y Trabajo en Equipo</h3>
-          <div class="footer__courses-list">
-            <div class="footer__course-item">
-              <strong>💻 Diseño de Páginas Web</strong>
-              <span>Arquitectura, maquetado e integración</span>
-            </div>
-            <div class="footer__course-item">
-              <strong>🎨 Diseño Gráfico</strong>
-              <span>Manual de marca e identidad visual</span>
-            </div>
-            <div class="footer__course-item">
-              <strong>📸 Curso de Fotografía</strong>
-              <span>Fotografía de productos y cobertura</span>
-            </div>
+          <h4 class="footer__col-title footer__social-title">Redes sociales</h4>
+          <div class="footer__socials">
+            <!-- Enlaces provisorios: reemplazar por las URL oficiales del CFP408. -->
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social-link"
+              aria-label="Facebook del CFP 408 (enlace de prueba)"
+            >
+              <svg class="footer__social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.6-1.6h1.7V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7v3h2.8v8z"></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social-link"
+              aria-label="Instagram del CFP 408 (enlace de prueba)"
+            >
+              <svg class="footer__social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <rect x="3.25" y="3.25" width="17.5" height="17.5" rx="5" fill="none" stroke="currentColor" stroke-width="2"></rect>
+                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle>
+                <circle cx="17.5" cy="6.5" r="1.25" fill="currentColor"></circle>
+              </svg>
+            </a>
           </div>
         </div>
+
       </div>
 
       <!-- Barra Inferior -->
