@@ -227,11 +227,13 @@
             </p>
           </div>
 
-          <!-- Mensaje de feedback dinámico -->
-          <div id="form-feedback" class="form__feedback" role="alert"></div>
+          <div class="sumate__content">
+            <div class="sumate__form-column">
+              <!-- Mensaje de feedback dinámico -->
+              <div id="form-feedback" class="form__feedback" role="alert"></div>
 
-          <!-- Formulario HTML -->
-          <form id="sumate-form" class="form" novalidate>
+              <!-- Formulario HTML -->
+              <form id="sumate-form" class="form" novalidate>
             <div class="form__row">
               <div class="form__group">
                 <label for="form-nombre" class="form__label">
@@ -342,10 +344,47 @@
               ></textarea>
             </div>
 
-            <button type="submit" class="btn btn--primary form__submit-btn">
-              Enviar Postulación a PRENDER
-            </button>
-          </form>
+                <button type="submit" class="btn btn--primary form__submit-btn">
+                  Enviar Postulación a PRENDER
+                </button>
+              </form>
+            </div>
+
+            <aside class="sumate__details" aria-label="Cómo llegar al CFP 408">
+              <section class="sumate__info-card sumate__map-card" aria-labelledby="sumate-map-title">
+                <div class="sumate__card-heading">
+                  <h3 class="sumate__card-title" id="sumate-map-title">Dónde estamos</h3>
+                  <p class="sumate__card-text">Fonrouge 326, Lomas de Zamora</p>
+                </div>
+                <iframe
+                  class="sumate__map"
+                  title="Mapa de Fonrouge 326, Lomas de Zamora"
+                  src="https://maps.google.com/maps?q=Fonrouge%20326%2C%20Lomas%20de%20Zamora&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen
+                ></iframe>
+                <a
+                  class="sumate__directions-link"
+                  href="https://www.google.com/maps/dir/?api=1&origin=Estaci%C3%B3n%20Lomas%20de%20Zamora&destination=Fonrouge%20326%2C%20Lomas%20de%20Zamora&travelmode=walking"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver camino a pie desde la estación de Lomas
+                </a>
+              </section>
+
+              <section class="sumate__info-card sumate__transit-card" aria-labelledby="sumate-transit-title">
+                <h3 class="sumate__card-title" id="sumate-transit-title">Cómo llegar en colectivo</h3>
+                <p class="sumate__card-text">
+                  Las líneas <strong>278 A</strong> y <strong>266</strong> (ramales 5, 2 y 3) pasan por la puerta y tienen parada en la esquina.
+                </p>
+                <p class="sumate__card-text">
+                  Si llegás a la estación de Lomas de Zamora, el centro queda a pocas cuadras. También podés tomar las líneas <strong>79</strong> o <strong>160</strong> por avenida Alsina: te dejan a dos cuadras.
+                </p>
+              </section>
+            </aside>
+          </div>
         </div>
 
       </div>
@@ -443,24 +482,6 @@
           </ul>
         </div>
 
-        <!-- Columna 4: Créditos a los Cursos del CFP408 -->
-        <div class="footer__col">
-          <h3 class="footer__col-title">Créditos y Trabajo en Equipo</h3>
-          <div class="footer__courses-list">
-            <div class="footer__course-item">
-              <strong>💻 Diseño de Páginas Web</strong>
-              <span>Arquitectura, maquetado e integración</span>
-            </div>
-            <div class="footer__course-item">
-              <strong>🎨 Diseño Gráfico</strong>
-              <span>Manual de marca e identidad visual</span>
-            </div>
-            <div class="footer__course-item">
-              <strong>📸 Curso de Fotografía</strong>
-              <span>Fotografía de productos y cobertura</span>
-            </div>
-          </div>
-        </div>
       </div>
 
       <!-- Barra Inferior -->
