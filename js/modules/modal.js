@@ -6,7 +6,15 @@
 
 // Placeholder para fotos de galería en caso de no existir aún
 function getGalleryPlaceholder(text, index) {
-  return `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450"><rect width="100%" height="100%" fill="%23cbd5e1"/><text x="50%" y="45%" font-family="sans-serif" font-size="22" font-weight="bold" fill="%23334155" text-anchor="middle" dominant-baseline="middle">${encodeURIComponent(text)}</text><text x="50%" y="58%" font-family="sans-serif" font-size="14" fill="%2364748b" text-anchor="middle" dominant-baseline="middle">Foto ${index + 1} • Curso de Fotografía</text></svg>`;
+  const escapedText = text.replace(/[<>&"']/g, (character) => ({
+    '<': '&lt;',
+    '>': '&gt;',
+    '&': '&amp;',
+    '"': '&quot;',
+    "'": '&apos;'
+  })[character]);
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450"><rect width="100%" height="100%" fill="#cbd5e1"/><text x="50%" y="45%" font-family="sans-serif" font-size="22" font-weight="bold" fill="#334155" text-anchor="middle" dominant-baseline="middle">${escapedText}</text><text x="50%" y="58%" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle" dominant-baseline="middle">Imagen ${index + 1} no disponible</text></svg>`;
+  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
 }
 
 export function openModal(item) {
@@ -17,7 +25,6 @@ export function openModal(item) {
   const titleEl = modal.querySelector('.modal__title');
   const catEl = modal.querySelector('.modal__category');
   const entrepreneurEl = modal.querySelector('.modal__entrepreneur');
-  const courseEl = modal.querySelector('.modal__course');
   const descEl = modal.querySelector('.modal__desc');
   const mainImgEl = modal.querySelector('.modal__main-image');
   const thumbsContainer = modal.querySelector('.modal__thumbs');
@@ -28,7 +35,6 @@ export function openModal(item) {
   if (titleEl) titleEl.textContent = item.nombre;
   if (catEl) catEl.textContent = item.categoria;
   if (entrepreneurEl) entrepreneurEl.textContent = `Emprendedor/a: ${item.emprendedor}`;
-  if (courseEl) courseEl.textContent = `Egresado/a de: ${item.cursoRealizado} (CFP408)`;
   if (descEl) descEl.textContent = item.descripcionLarga;
 
   // Lista unificada de fotos (principal + galería)
@@ -39,40 +45,41 @@ export function openModal(item) {
     const mainPlaceholder = getGalleryPlaceholder(item.nombre, 0);
     mainImgEl.src = item.fotoPrincipal;
     mainImgEl.alt = `${item.nombre} - Foto de producto`;
-    mainImgEl.onerror = () => { mainImgEl.src = mainPlaceholder; };
+    mainImgEl.onerror = () => {
+      mainImgEl.onerror = null;
+      mainImgEl.src = mainPlaceholder;
+    };
   }
 
   // Configurar miniaturas interactivas
   if (thumbsContainer) {
-    thumbsContainer.innerHTML = allPhotos.map((photoSrc, idx) => {
+    thumbsContainer.innerHTML = '';
+    allPhotos.forEach((photoSrc, idx) => {
       const thumbPlaceholder = getGalleryPlaceholder(item.nombre, idx);
-      return `
-        <img 
-          src="${photoSrc}" 
-          alt="Miniatura ${idx + 1}" 
-          class="modal__thumb ${idx === 0 ? 'modal__thumb--active' : ''}"
-          data-src="${photoSrc}"
-          onerror="this.onerror=null; this.src='${thumbPlaceholder}';"
-        >
-      `;
-    }).join('');
-
-    // Evento para cambiar la foto principal al hacer clic en una miniatura
-    thumbsContainer.querySelectorAll('.modal__thumb').forEach(thumb => {
+      const thumb = document.createElement('img');
+      thumb.src = photoSrc;
+      thumb.alt = `Foto ${idx + 1} de ${item.nombre}`;
+      thumb.className = `modal__thumb ${idx === 0 ? 'modal__thumb--active' : ''}`;
+      thumb.dataset.src = photoSrc;
+      thumb.onerror = () => {
+        thumb.onerror = null;
+        thumb.src = thumbPlaceholder;
+      };
       thumb.addEventListener('click', () => {
         thumbsContainer.querySelectorAll('.modal__thumb').forEach(t => t.classList.remove('modal__thumb--active'));
         thumb.classList.add('modal__thumb--active');
         if (mainImgEl) {
-          mainImgEl.src = thumb.src;
+          mainImgEl.src = thumb.dataset.src;
         }
       });
+      thumbsContainer.appendChild(thumb);
     });
   }
 
   // Enlaces de contacto
   if (whatsappBtn) {
     if (item.redes && item.redes.whatsapp) {
-      const msg = encodeURIComponent(`¡Hola ${item.emprendedor}! Vi tu emprendimiento "${item.nombre}" en la plataforma PRENDER del CFP408 y me gustaría hacerte una consulta.`);
+      const msg = encodeURIComponent(`¡Hola ${item.nombre}! Vi tu emprendimiento "${item.nombre}" en la plataforma PRENDER del CFP408 y me gustaría hacerte una consulta.`);
       whatsappBtn.href = `https://wa.me/${item.redes.whatsapp}?text=${msg}`;
       whatsappBtn.style.display = 'inline-flex';
     } else {
