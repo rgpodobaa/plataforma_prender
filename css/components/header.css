@@ -1,0 +1,131 @@
+/* ==========================================================================
+   SECCIÓN 1: HEADER & NAVEGACIÓN
+   Responsable: Estudiante 1 / Integrador
+   Prefijo BEM: .header__* , .nav__*
+   ========================================================================== */
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  z-index: 100;
+  transition: var(--transition-normal);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Logo */
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.header__logo-text {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  letter-spacing: -0.5px;
+}
+
+.header__badge {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  background-color: var(--color-secondary);
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+/* Menú de navegación */
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.nav__link {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-main);
+  position: relative;
+  padding: var(--spacing-xs) 0;
+}
+
+.nav__link:hover,
+.nav__link--active {
+  color: var(--color-primary);
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width var(--transition-fast);
+}
+
+.nav__link:hover::after {
+  width: 100%;
+}
+
+/* Botón hamburguesa para móvil */
+.header__toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  padding: var(--spacing-xs);
+}
+
+.header__toggle-bar {
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  transition: var(--transition-fast);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header__toggle {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-lg);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path var(--transition-normal);
+  }
+
+  .nav--open {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .header__cta {
+    display: none;
+  }
+}

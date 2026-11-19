@@ -1,0 +1,73 @@
+/* ==========================================================================
+   VARIABLES Y DESIGN TOKENS - PLATAFORMA PRENDER (CFP408)
+   Nota para el equipo: Estos valores son la base del sistema visual.
+   Cuando el curso de Diseño Gráfico entregue el Manual de Marca definitivo,
+   solo modificaremos estos valores aquí y se actualizarán en toda la web.
+   ========================================================================== */
+
+:root {
+  /* --- PALETA CROMÁTICA PRINCIPAL --- */
+  --color-primary: #e65c00;          /* Naranja enérgico PRENDER */
+  --color-primary-hover: #cf5300;
+  --color-primary-light: #fff2e8;
+  --color-secondary: #1a365d;        /* Azul institucional CFP408 */
+  --color-secondary-hover: #132742;
+  --color-accent: #f59e0b;           /* Amarillo / Ámbar de acento */
+
+  /* --- COLORES NEUTROS Y FONDOS --- */
+  --color-bg: #f8fafc;               /* Fondo general claro */
+  --color-surface: #ffffff;          /* Fondo de tarjetas y secciones */
+  --color-surface-alt: #edf2f7;      /* Fondo alternativo suave */
+  --color-text-main: #1e293b;        /* Texto principal */
+  --color-text-muted: #64748b;       /* Texto secundario / subtítulos */
+  --color-border: #e2e8f0;          /* Líneas divisorias y bordes */
+
+  /* --- ESTADOS Y FEEDBACK --- */
+  --color-success: #10b981;
+  --color-error: #ef4444;
+
+  /* --- TIPOGRAFÍA --- */
+  --font-family-headings: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+  --font-family-body: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+  
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-base: 1rem;    /* 16px */
+  --font-size-md: 1.125rem;  /* 18px */
+  --font-size-lg: 1.25rem;   /* 20px */
+  --font-size-xl: 1.5rem;    /* 24px */
+  --font-size-2xl: 2rem;     /* 32px */
+  --font-size-3xl: 2.5rem;   /* 40px */
+  --font-size-hero: 3.25rem; /* 52px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* --- ESPACIADOS Y LAYOUT --- */
+  --spacing-xs: 0.25rem;  /* 4px */
+  --spacing-sm: 0.5rem;   /* 8px */
+  --spacing-md: 1rem;     /* 16px */
+  --spacing-lg: 1.5rem;   /* 24px */
+  --spacing-xl: 2.5rem;   /* 40px */
+  --spacing-2xl: 4rem;    /* 64px */
+
+  --container-max-width: 1200px;
+  --header-height: 72px;
+
+  /* --- BORDES Y SOMBRAS --- */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 12px 30px rgba(230, 92, 0, 0.18);
+
+  /* --- TRANSICIONES --- */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.25s ease-in-out;
+}

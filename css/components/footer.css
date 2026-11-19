@@ -1,0 +1,145 @@
+/* ==========================================================================
+   SECCIÓN 7: FOOTER INSTITUCIONAL Y CRÉDITOS
+   Responsable: Estudiante 7
+   Prefijo BEM: .footer__*
+   ========================================================================== */
+
+.footer {
+  background-color: var(--color-secondary);
+  color: #ffffff;
+  padding-top: var(--spacing-2xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: var(--spacing-2xl);
+  margin-bottom: var(--spacing-2xl);
+}
+
+/* Columna Marca */
+.footer__brand-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: #ffffff;
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer__brand-title span {
+  color: var(--color-primary);
+}
+
+.footer__brand-desc {
+  font-size: var(--font-size-sm);
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.footer__badge-cfp {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  color: #e2e8f0;
+}
+
+/* Columnas de Enlaces */
+.footer__col-title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: #ffffff;
+  margin-bottom: var(--spacing-md);
+  position: relative;
+  padding-bottom: var(--spacing-xs);
+}
+
+.footer__col-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footer__link {
+  font-size: var(--font-size-sm);
+  color: #cbd5e1;
+  transition: color var(--transition-fast);
+}
+
+.footer__link:hover {
+  color: var(--color-primary);
+}
+
+/* Columna de Créditos de Cursos CFP408 */
+.footer__courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footer__course-item {
+  font-size: var(--font-size-xs);
+  color: #cbd5e1;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--color-primary);
+}
+
+.footer__course-item strong {
+  display: block;
+  color: #ffffff;
+  font-size: var(--font-size-sm);
+}
+
+/* Barra inferior / Copyright */
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--spacing-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-xs);
+  color: #94a3b8;
+}
+
+.footer__cfp-link {
+  color: #ffffff;
+  font-weight: var(--font-weight-semibold);
+}
+
+.footer__cfp-link:hover {
+  color: var(--color-primary);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+  }
+}
+
+@media (max-width: 560px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-sm);
+  }
+}
