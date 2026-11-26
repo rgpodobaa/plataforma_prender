@@ -375,5 +375,50 @@ export const emprendimientos = [
       email: "hojasalviento@ejemplo.com"
     },
     destacado: true
+  },
+  {
+    id: "petu-donitas",
+    nombre: "PETU DONITAS",
+    categoria: "Gastronomía",
+    descripcionCorta: "Donitas artesanales decoradas con chocolate, glasé y granas de colores.",
+    descripcionLarga: "Donitas elaboradas artesanalmente y decoradas con chocolate, glasé y granas de colores. Una opción dulce para disfrutar y compartir.",
+    emprendedor: "PETU DONITAS",
+    fotoPrincipal: "assets/images/emprendimientos/petu-donitas/principal.jpg",
+    galeria: [],
+    redes: {
+      whatsapp: "5491150411870",
+      instagram: "petu.donitas"
+    },
+    destacado: false
+  },
+  {
+    id: "pulseras-jazmin",
+    nombre: "PULSERAS JAZMIN",
+    categoria: "Accesorios",
+    descripcionCorta: "Pulseras artesanales con hilos de colores, cuentas y dijes.",
+    descripcionLarga: "Pulseras confeccionadas a mano con hilos de colores, cuentas y dijes. Diseños artesanales para llevar o regalar.",
+    emprendedor: "PULSERAS JAZMIN",
+    fotoPrincipal: "assets/images/emprendimientos/pulseras-jazmin/principal.jpeg",
+    galeria: [],
+    redes: {
+      whatsapp: "5491128748953",
+      instagram: "pulseras.jazmin"
+    },
+    destacado: false
+  },
+  {
+    id: "sabores-al-horno",
+    nombre: "SABORES AL HORNO",
+    categoria: "Gastronomía",
+    descripcionCorta: "Productos horneados artesanales, preparados para disfrutar y compartir.",
+    descripcionLarga: "Preparaciones horneadas artesanales, elaboradas para disfrutar en casa o compartir. En la imagen se presentan panes de miga aireada y dorada.",
+    emprendedor: "SABORES AL HORNO",
+    fotoPrincipal: "assets/images/emprendimientos/sabores-al-horno/principal.jpg",
+    galeria: [],
+    redes: {
+      whatsapp: "5491138894803",
+      instagram: "saboresalhorno.sv_"
+    },
+    destacado: false
   }
 ];
