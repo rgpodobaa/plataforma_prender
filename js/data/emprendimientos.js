@@ -31,58 +31,59 @@ export const emprendimientos = [
     destacado: true
   },
   {
-    id: "raiz-madera",
-    nombre: "Raíz Diseño en Madera",
-    categoria: "Carpintería",
-    descripcionCorta: "Muebles a medida, deco rústica y objetos de diseño sustentable en maderas recuperadas.",
-    descripcionLarga: "Taller de ebanistería y carpintería moderna. Diseñamos mesas de centro, estanterías flotantes y tablas para asado curadas con cera de abeja.",
-    emprendedor: "Lucas Fernández",
-    fotoPrincipal: "assets/images/emprendimientos/raiz-madera/principal.webp",
+    id: "daruma",
+    nombre: "Daruma",
+    categoria: "Diseño",
+    descripcionCorta: "Objetos de diseño y piezas creativas para regalar, decorar y personalizar tus espacios.",
+    descripcionLarga: "Daruma es un proyecto de diseño que crea piezas originales con una mirada creativa y atención en los detalles. Cada propuesta busca sumar identidad y color a los espacios cotidianos, además de ofrecer opciones especiales para regalar. Esta descripción es provisoria y debe reemplazarse por la información confirmada del emprendimiento.",
+    emprendedor: "Nombre de ejemplo (reemplazar)",
+    fotoPrincipal: "assets/images/emprendimientos/daruma/DARUMA.jpeg",
     galeria: [
-      "assets/images/emprendimientos/raiz-madera/foto-1.webp",
-      "assets/images/emprendimientos/raiz-madera/foto-2.webp"
+      "assets/images/emprendimientos/daruma/foto-1.jpeg",
+      "assets/images/emprendimientos/daruma/foto-2.jpeg"
     ],
     redes: {
       whatsapp: "5491100000002",
-      instagram: "raiz.madera.cfp",
-      email: "raizmadera@ejemplo.com"
+      instagram: "daruma.diseno.ejemplo",
+      email: "daruma@ejemplo.com"
     },
     destacado: true
   },
   {
-    id: "hilo-y-puntada",
-    nombre: "Hilo & Puntada",
+    id: "desde-cero",
+    nombre: "Desde cero",
     categoria: "Textil",
-    descripcionCorta: "Prendas urbanas, indumentaria de trabajo y accesorios textiles ecológicos.",
-    descripcionLarga: "Confección textil consciente. Producimos delantales profesionales, tote bags estampadas y arreglos de alta costura.",
-    emprendedor: "Valeria Gómez",
-    fotoPrincipal: "assets/images/emprendimientos/hilo-y-puntada/principal.webp",
+    descripcionCorta: "Ropa para mujeres y niños, combinando tendencias y comodidad",
+    descripcionLarga: "Desde cero ofrece prendas para mujeres y niños, con diseños pensados para acompañar distintas ocasiones y estilos. La propuesta combina tendencias actuales con comodidad para el uso diario. Esta descripción es provisoria y debe reemplazarse por la información confirmada del emprendimiento.",
+    emprendedor: "Nombre de ejemplo (reemplazar)",
+    fotoPrincipal: "assets/images/emprendimientos/desde-cero/DESDE-CERO.jpg",
     galeria: [
-      "assets/images/emprendimientos/hilo-y-puntada/foto-1.webp",
-      "assets/images/emprendimientos/hilo-y-puntada/foto-2.webp"
+      "assets/images/emprendimientos/desde-cero/foto-1.jpeg",
+      "assets/images/emprendimientos/desde-cero/foto-2.jpeg"
     ],
     redes: {
-      whatsapp: "5491100000003",
-      instagram: "hiloypuntada.cfp",
-      email: "hiloypuntada@ejemplo.com"
+      whatsapp: "5491178171166",
+      instagram: "desdecero_23",
+      email: "desdecero@ejemplo.com"
     },
     destacado: true
   },
   {
-    id: "chispa-segura",
-    nombre: "ElectroChispa",
-    categoria: "Electricidad",
-    descripcionCorta: "Instalaciones eléctricas residenciales, iluminación LED y mantenimiento con normas de seguridad.",
-    descripcionLarga: "Servicio técnico electricista certificado. Realizamos tableros nuevos, recableados, detección de fugas y colocación de luminarias de bajo consumo.",
-    emprendedor: "Jorge Ramirez",
-    fotoPrincipal: "assets/images/emprendimientos/chispa-segura/principal.webp",
+    id: "design-pool-pro",
+    nombre: "Design Pool Pro",
+    categoria: "Piscinas",
+    descripcionCorta: "Equipos, accesorios y soluciones para instalación y mantenimiento de piscinas",
+    descripcionLarga: "Design Pool Pro reúne equipos y accesorios para proyectos de piscinas y brinda soluciones para su instalación y mantenimiento. Su propuesta busca acompañar cada etapa, desde la puesta en marcha hasta el cuidado periódico. Esta descripción es provisoria y debe reemplazarse por la información confirmada del emprendimiento.",
+    emprendedor: "Nombre de ejemplo (reemplazar)",
+    fotoPrincipal: "assets/images/emprendimientos/design-pool-pro/DESIGN-POOL-PRO.jpg",
     galeria: [
-      "assets/images/emprendimientos/chispa-segura/foto-1.webp"
+      "assets/images/emprendimientos/design-pool-pro/foto-1.jpeg",
+      "assets/images/emprendimientos/design-pool-pro/foto-2.jpeg"
     ],
     redes: {
       whatsapp: "5491100000004",
-      instagram: "electrochispa.cfp",
-      email: "electrochispa@ejemplo.com"
+      instagram: "design_pool_pro",
+      email: "designpoolpro@ejemplo.com"
     },
     destacado: false
   },
