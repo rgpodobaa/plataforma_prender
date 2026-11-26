@@ -9,17 +9,31 @@ export function initNavigation() {
   const navLinks = document.querySelectorAll('.nav__link');
 
   if (toggleBtn && nav) {
+    const closeMenu = () => {
+      nav.classList.remove('nav--open');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+      toggleBtn.setAttribute('aria-label', 'Abrir menú de navegación');
+    };
+
     toggleBtn.addEventListener('click', () => {
       const isOpen = nav.classList.toggle('nav--open');
       toggleBtn.setAttribute('aria-expanded', isOpen);
+      toggleBtn.setAttribute(
+        'aria-label',
+        isOpen ? 'Cerrar menú de navegación' : 'Abrir menú de navegación'
+      );
     });
 
     // Cerrar menú al hacer click en cualquier enlace en móviles
     navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        nav.classList.remove('nav--open');
-        toggleBtn.setAttribute('aria-expanded', 'false');
-      });
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && nav.classList.contains('nav--open')) {
+        closeMenu();
+        toggleBtn.focus();
+      }
     });
   }
 

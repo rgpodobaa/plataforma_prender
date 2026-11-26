@@ -21,6 +21,13 @@
   --color-text-main: #1e293b;        /* Texto principal */
   --color-text-muted: #64748b;       /* Texto secundario / subtítulos */
   --color-border: #e2e8f0;          /* Líneas divisorias y bordes */
+  --color-hero-bg: #fff8f0;
+  --color-hero-paper: #fffdf9;
+  --color-hero-ink: #183c38;
+  --color-hero-muted: #68746d;
+  --color-hero-orange: #e96b3a;
+  --color-hero-orange-dark: #cb542d;
+  --color-hero-line: #eee5da;
 
   /* --- ESTADOS Y FEEDBACK --- */
   --color-success: #10b981;
@@ -29,6 +36,8 @@
   /* --- TIPOGRAFÍA --- */
   --font-family-headings: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
   --font-family-body: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+  --font-family-hero-body: 'DM Sans', sans-serif;
+  --font-family-hero-display: 'Manrope', sans-serif;
   
   --font-size-xs: 0.75rem;   /* 12px */
   --font-size-sm: 0.875rem;  /* 14px */
@@ -54,7 +63,8 @@
   --spacing-2xl: 4rem;    /* 64px */
 
   --container-max-width: 1200px;
-  --header-height: 72px;
+  --wide-shell-width: 1240px;
+  --header-height: 92px;
 
   /* --- BORDES Y SOMBRAS --- */
   --radius-sm: 6px;
