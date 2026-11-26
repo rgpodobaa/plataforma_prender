@@ -375,5 +375,48 @@ export const emprendimientos = [
       email: "hojasalviento@ejemplo.com"
     },
     destacado: true
+  },
+  {
+    id: "aralestampa",
+    nombre: "ARALESTAMPA",
+    categoria: "Textil",
+    descripcionCorta: "Remeras y prendas con estampas ilustradas y diseños originales.",
+    descripcionLarga: "Diseño y estampado de prendas textiles con ilustraciones y motivos gráficos, para sumar un estilo propio a cada pieza.",
+    emprendedor: "Lara morales",
+    fotoPrincipal: "assets/images/emprendimientos/aralestampa/principal.jpg",
+    galeria: [],
+    redes: { 
+      instagram:"aral.estampa"
+    },
+    destacado: false
+  },
+  {
+    id: "arcoiris-deco-kids",
+    nombre: "ARCOIRIS DECO KIDS",
+    categoria: "Textil",
+    descripcionCorta: "Indumentaria, accesorios y artículos textiles para bebés y niños.",
+    descripcionLarga: "Propuestas textiles infantiles que incluyen prendas, accesorios y artículos para acompañar a bebés y niños, con estampas y detalles delicados.",
+    emprendedor: "ARCOIRIS DECO KIDS",
+    fotoPrincipal: "assets/images/emprendimientos/arcoiris-deco-kids/principal.jpg",
+    galeria: [],
+    redes: {
+      instagram:"arcoiris.decokids"
+    
+    },
+    destacado: false
+  },
+  {
+    id: "cositas-bonitas",
+    nombre: "COSITAS BONITAS",
+    categoria: "Artesanía",
+    descripcionCorta: "Aromatizadores, velas y objetos decorativos artesanales para el hogar.",
+    descripcionLarga: "Productos artesanales para perfumar y decorar espacios, con opciones como aromatizadores, velas y piezas decorativas.",
+    emprendedor: "Maria Laura Donadio",
+    fotoPrincipal: "assets/images/emprendimientos/cositas-bonitas/principal.jpg",
+    galeria: [],
+    redes: {
+      instagram:"cositasbonitasdelau"
+    },
+    destacado: false
   }
 ];
