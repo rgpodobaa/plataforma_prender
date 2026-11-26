@@ -32,6 +32,7 @@ export function openModal(item) {
   const descEl = modal.querySelector('.modal__desc');
   const mainImgEl = modal.querySelector('.modal__main-image');
   const thumbsContainer = modal.querySelector('.modal__thumbs');
+  const galleryNoteEl = modal.querySelector('.modal__gallery-note');
   const whatsappBtn = modal.querySelector('.modal__btn-whatsapp');
   const instagramBtn = modal.querySelector('.modal__btn-instagram');
   const closeBtn = modal.querySelector('.modal__close');
@@ -43,6 +44,10 @@ export function openModal(item) {
   if (descEl) {
     descEl.textContent = item.descripcionLarga;
     descEl.scrollTop = 0;
+  }
+  if (galleryNoteEl) {
+    galleryNoteEl.textContent = item.notaGaleria || '';
+    galleryNoteEl.hidden = !item.notaGaleria;
   }
 
   // Lista unificada de fotos (principal + galería)

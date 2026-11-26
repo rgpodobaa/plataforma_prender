@@ -31,58 +31,60 @@ export const emprendimientos = [
     destacado: true
   },
   {
-    id: "raiz-madera",
-    nombre: "Raíz Diseño en Madera",
-    categoria: "Carpintería",
-    descripcionCorta: "Muebles a medida, deco rústica y objetos de diseño sustentable en maderas recuperadas.",
-    descripcionLarga: "Taller de ebanistería y carpintería moderna. Diseñamos mesas de centro, estanterías flotantes y tablas para asado curadas con cera de abeja.",
-    emprendedor: "Lucas Fernández",
-    fotoPrincipal: "assets/images/emprendimientos/raiz-madera/principal.webp",
+    id: "Edu Masajista ok",
+    nombre: "Edu Masajista ok",
+    categoria: "Masajes",
+    descripcionCorta: "Masajes a domicilio a coordinar/Atencion en gabinete.",
+    descripcionLarga: "Buscamos aliviar dolores y tensiones, mejorar la circulación, reducir el estrés y favorecer la recuperación física o el bienestar general de la persona, adaptando la sesión a objetivos relajantes, deportivos o terapéuticos.",
+    emprendedor: "Eduardo Perez",
+    fotoPrincipal: "assets/images/emprendimientos/edu-masajista/principal.jpeg",
     galeria: [
-      "assets/images/emprendimientos/raiz-madera/foto-1.webp",
-      "assets/images/emprendimientos/raiz-madera/foto-2.webp"
+      "assets/images/emprendimientos/edu-masajista/stock-masaje-1.jpeg",
+      "assets/images/emprendimientos/edu-masajista/stock-masaje-2.jpeg"
     ],
     redes: {
       whatsapp: "5491100000002",
-      instagram: "raiz.madera.cfp",
-      email: "raizmadera@ejemplo.com"
+      instagram: "edumasajistaok",
+      email: "edumasajista@ejemplo.com"
     },
     destacado: true
   },
   {
-    id: "hilo-y-puntada",
-    nombre: "Hilo & Puntada",
-    categoria: "Textil",
-    descripcionCorta: "Prendas urbanas, indumentaria de trabajo y accesorios textiles ecológicos.",
-    descripcionLarga: "Confección textil consciente. Producimos delantales profesionales, tote bags estampadas y arreglos de alta costura.",
-    emprendedor: "Valeria Gómez",
-    fotoPrincipal: "assets/images/emprendimientos/hilo-y-puntada/principal.webp",
+    id: "dgdesing",
+    nombre: "DGDesing",
+    categoria: "Velas",
+    descripcionCorta: "Velas artesanales para decorar y aromatizar tus espacios.",
+    descripcionLarga: "Elaboración de velas decorativas y aromáticas para crear ambientes cálidos y acompañar momentos especiales.",
+    emprendedor: "Daiana Godoy",
+    fotoPrincipal: "assets/images/emprendimientos/dgdesing/principal.jpeg",
     galeria: [
-      "assets/images/emprendimientos/hilo-y-puntada/foto-1.webp",
-      "assets/images/emprendimientos/hilo-y-puntada/foto-2.webp"
+      "assets/images/emprendimientos/dgdesing/velas-referencia-1.jpg",
+      "assets/images/emprendimientos/dgdesing/velas-referencia-2.jpg"
     ],
+    notaGaleria: "Fotos de referencia; la imagen principal corresponde al emprendimiento.",
     redes: {
       whatsapp: "5491100000003",
-      instagram: "hiloypuntada.cfp",
-      email: "hiloypuntada@ejemplo.com"
+      instagram: "dgdesing.cfp",
+      email: "dgdesing@ejemplo.com"
     },
     destacado: true
   },
   {
-    id: "chispa-segura",
-    nombre: "ElectroChispa",
-    categoria: "Electricidad",
-    descripcionCorta: "Instalaciones eléctricas residenciales, iluminación LED y mantenimiento con normas de seguridad.",
-    descripcionLarga: "Servicio técnico electricista certificado. Realizamos tableros nuevos, recableados, detección de fugas y colocación de luminarias de bajo consumo.",
-    emprendedor: "Jorge Ramirez",
-    fotoPrincipal: "assets/images/emprendimientos/chispa-segura/principal.webp",
+    id: "latiendita",
+    nombre: "La Tiendita de Chechu",
+    categoria: "Textil",
+    descripcionCorta: "Venta de remeras y prendas variadas para distintos estilos.",
+    descripcionLarga: "Venta de indumentaria y remeras de distintos estilos, con prendas variadas para diferentes gustos.",
+    emprendedor: "Cecilia Duport",
+    fotoPrincipal: "assets/images/emprendimientos/latiendita/principal.jpeg",
     galeria: [
-      "assets/images/emprendimientos/chispa-segura/foto-1.webp"
+      "assets/images/emprendimientos/latiendita/remeras-detalle-1.jpg",
+      "assets/images/emprendimientos/latiendita/remeras-detalle-2.jpg"
     ],
     redes: {
       whatsapp: "5491100000004",
-      instagram: "electrochispa.cfp",
-      email: "electrochispa@ejemplo.com"
+      instagram: "latienditadechechu",
+      email: "latienditadechechu@ejemplo.com"
     },
     destacado: false
   },
