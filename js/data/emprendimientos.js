@@ -31,96 +31,89 @@ export const emprendimientos = [
     destacado: true
   },
   {
-    id: "raiz-madera",
-    nombre: "Raíz Diseño en Madera",
-    categoria: "Carpintería",
-    descripcionCorta: "Muebles a medida, deco rústica y objetos de diseño sustentable en maderas recuperadas.",
-    descripcionLarga: "Taller de ebanistería y carpintería moderna. Diseñamos mesas de centro, estanterías flotantes y tablas para asado curadas con cera de abeja.",
-    emprendedor: "Lucas Fernández",
-    fotoPrincipal: "assets/images/emprendimientos/raiz-madera/principal.webp",
-    galeria: [
-      "assets/images/emprendimientos/raiz-madera/foto-1.webp",
-      "assets/images/emprendimientos/raiz-madera/foto-2.webp"
-    ],
+    id: "marr-ktendencia",
+    nombre: "MARR-KTENDENCIA",
+    categoria: "Diseño",
+    descripcionCorta: "Regalos personalizados y detalles decorativos hechos para cada ocasión.",
+    descripcionLarga: "MARR-KTENDENCIA crea regalos personalizados y objetos decorativos con diseños coloridos para cumpleaños, fiestas y momentos especiales. Cada pieza se prepara con dedicación para convertir una idea en un recuerdo único.",
+    emprendedor: "MARR-KTENDENCIA",
+    fotoPrincipal: "assets/images/emprendimientos/marr-ktendencia/marr-ktendencia.jpg",
+    galeria: [],
     redes: {
-      whatsapp: "5491100000002",
-      instagram: "raiz.madera.cfp",
-      email: "raizmadera@ejemplo.com"
+      instagram:"marr_ktendencia",
+      whatsapp:""
     },
+    contactoProvisorio: true,
     destacado: true
   },
   {
-    id: "hilo-y-puntada",
-    nombre: "Hilo & Puntada",
+    id: "meetsmai",
+    nombre: "MEETSMAI",
     categoria: "Textil",
-    descripcionCorta: "Prendas urbanas, indumentaria de trabajo y accesorios textiles ecológicos.",
-    descripcionLarga: "Confección textil consciente. Producimos delantales profesionales, tote bags estampadas y arreglos de alta costura.",
-    emprendedor: "Valeria Gómez",
-    fotoPrincipal: "assets/images/emprendimientos/hilo-y-puntada/principal.webp",
-    galeria: [
-      "assets/images/emprendimientos/hilo-y-puntada/foto-1.webp",
-      "assets/images/emprendimientos/hilo-y-puntada/foto-2.webp"
-    ],
+    descripcionCorta: "Muñecos y personajes textiles confeccionados a mano.",
+    descripcionLarga: "MEETSMAI diseña y confecciona muñecos textiles inspirados en personajes divertidos. Cada creación combina telas suaves, colores llamativos y detalles hechos a mano, ideal para regalar o coleccionar.",
+    emprendedor: "ADRIANA SAMANTA RIVERA",
+    fotoPrincipal: "assets/images/emprendimientos/meetsmai/meetsmai.jpg",
+    galeria: [],
     redes: {
-      whatsapp: "5491100000003",
-      instagram: "hiloypuntada.cfp",
-      email: "hiloypuntada@ejemplo.com"
+      instagram:"meetsmai",
+      whatsapp:""
     },
+    contactoProvisorio: true,
     destacado: true
   },
   {
-    id: "chispa-segura",
-    nombre: "ElectroChispa",
-    categoria: "Electricidad",
-    descripcionCorta: "Instalaciones eléctricas residenciales, iluminación LED y mantenimiento con normas de seguridad.",
-    descripcionLarga: "Servicio técnico electricista certificado. Realizamos tableros nuevos, recableados, detección de fugas y colocación de luminarias de bajo consumo.",
-    emprendedor: "Jorge Ramirez",
-    fotoPrincipal: "assets/images/emprendimientos/chispa-segura/principal.webp",
-    galeria: [
-      "assets/images/emprendimientos/chispa-segura/foto-1.webp"
-    ],
+    id: "nails-styles",
+    nombre: "NAILS STYLES",
+    categoria: "Belleza",
+    descripcionCorta: "Manicuría y diseños de nail art personalizados.",
+    descripcionLarga: "NAILS STYLES ofrece manicuría y diseños de nail art personalizados, desde estilos delicados para todos los días hasta propuestas con brillo y detalles para ocasiones especiales.",
+    emprendedor: "NAILS STYLES",
+    fotoPrincipal: "assets/images/emprendimientos/nails-styles/nails-styles.jpg",
+    galeria: [],
     redes: {
-      whatsapp: "5491100000004",
-      instagram: "electrochispa.cfp",
-      email: "electrochispa@ejemplo.com"
+      whatsapp: "",
+      instagram: "nailsstyles496"
     },
+    contactoProvisorio: true,
     destacado: false
   },
   {
-    id: "brillo-urbano",
-    nombre: "Estudio Brillo Urbano",
-    categoria: "Belleza",
-    descripcionCorta: "Cuidado capilar, estilismo, colorimetría y diseño de cejas y pestañas.",
-    descripcionLarga: "Espacio dedicado al bienestar personal y estética capilar. Aplicamos tratamientos reconstructores, alisados y cortes adaptados a tu estilo.",
-    emprendedor: "Camila Navarro",
-    fotoPrincipal: "assets/images/emprendimientos/brillo-urbano/principal.webp",
-    galeria: [
-      "assets/images/emprendimientos/brillo-urbano/foto-1.webp",
-      "assets/images/emprendimientos/brillo-urbano/foto-2.webp"
-    ],
+    id: "lq-branding",
+    nombre: "LQ BRANDING",
+    categoria: "Diseño web",
+    descripcionCorta: "Diseño y desarrollo de páginas web para marcas y emprendimientos.",
+    descripcionLarga: "LQ BRANDING, el emprendimiento de Leonel Quiroga, crea páginas web para presentar marcas, servicios y productos en internet. Cada sitio busca transmitir la identidad del proyecto y ofrecer una experiencia clara, atractiva y fácil de navegar.",
+    emprendedor: "Leonel Quiroga",
+    fotoPrincipal: "assets/images/emprendimientos/lq-branding/lq-branding.png",
+    galeria: [],
     redes: {
-      whatsapp: "5491100000005",
-      instagram: "brillourbano.cfp",
-      email: "brillourbano@ejemplo.com"
+      whatsapp: "5491144641997",
+      instagram: "lqbranding"
     },
+    contactoProvisorio: true,
     destacado: true
   },
   {
-    id: "tecno-fix",
-    nombre: "TecnoFix Soluciones",
-    categoria: "Informática",
-    descripcionCorta: "Mantenimiento preventivo, armado de PCs, instalación de software y redes hogareñas.",
-    descripcionLarga: "Servicio informático integral para particulares y pymes. Diagnóstico rápido, limpieza de componentes y optimización de rendimiento.",
-    emprendedor: "Gonzalo Benítez",
-    fotoPrincipal: "assets/images/emprendimientos/tecno-fix/principal.webp",
+    id: "sof-sai-sublimaciones",
+    nombre: "SOF SAI Sublimaciones",
+    categoria: "Textil",
+    descripcionCorta: "Merchandising de artistas y productos personalizados.",
+    descripcionLarga: "SOF SAI Sublimaciones, el emprendimiento de Sofia Sainato, crea merchandising inspirado en artistas y productos personalizados. La propuesta incluye prendas, accesorios y objetos con diseños impresos para acompañar tus gustos o convertir tus ideas en regalos únicos.",
+    emprendedor: "Sofia Sainato",
+    fotoPrincipal: "assets/images/emprendimientos/sof-sai-sublimaciones/sof-sai-sublimaciones-1.jpeg",
     galeria: [
-      "assets/images/emprendimientos/tecno-fix/foto-1.webp"
+      "assets/images/emprendimientos/sof-sai-sublimaciones/sof-sai-sublimaciones-2.jpeg",
+      "assets/images/emprendimientos/sof-sai-sublimaciones/sof-sai-sublimaciones-3.jpeg",
+      "assets/images/emprendimientos/sof-sai-sublimaciones/sof-sai-sublimaciones-4.jpeg",
+      "assets/images/emprendimientos/sof-sai-sublimaciones/sof-sai-sublimaciones-5.jpeg",
+      "assets/images/emprendimientos/sof-sai-sublimaciones/sof-sai-sublimaciones-6.jpeg"
     ],
     redes: {
-      whatsapp: "5491100000006",
-      instagram: "tecnofix.cfp",
-      email: "tecnofix@ejemplo.com"
+      whatsapp: "5491165390996",
+      instagram: "sofsaisublimacion"
     },
+    contactoProvisorio: true,
     destacado: false
   },
   {

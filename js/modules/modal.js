@@ -19,6 +19,26 @@ function getGalleryPlaceholder(text, index) {
   return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
 }
 
+function configureContactButton(button, href, showPlaceholder) {
+  if (!button) return;
+
+  if (href) {
+    button.href = href;
+    button.style.display = 'inline-flex';
+    button.removeAttribute('aria-disabled');
+    button.onclick = null;
+  } else if (showPlaceholder) {
+    button.href = '#';
+    button.style.display = 'inline-flex';
+    button.setAttribute('aria-disabled', 'true');
+    button.onclick = (event) => event.preventDefault();
+  } else {
+    button.style.display = 'none';
+    button.removeAttribute('aria-disabled');
+    button.onclick = null;
+  }
+}
+
 export function openModal(item) {
   const modal = document.getElementById('modal-detalle');
   if (!modal) return;
@@ -89,25 +109,18 @@ export function openModal(item) {
   }
 
   // Enlaces de contacto
-  if (whatsappBtn) {
-    if (item.redes && item.redes.whatsapp) {
-      const saludo = item.emprendedor ? `¡Hola ${item.emprendedor}!` : '¡Hola!';
-      const msg = encodeURIComponent(`${saludo} Vi tu emprendimiento "${item.nombre}" en la plataforma PRENDER del CFP408 y me gustaría hacerte una consulta.`);
-      whatsappBtn.href = `https://wa.me/${item.redes.whatsapp}?text=${msg}`;
-      whatsappBtn.style.display = 'inline-flex';
-    } else {
-      whatsappBtn.style.display = 'none';
-    }
+  let whatsappHref = '';
+  if (item.redes && item.redes.whatsapp) {
+    const saludo = item.emprendedor ? `¡Hola ${item.emprendedor}!` : '¡Hola!';
+    const msg = encodeURIComponent(`${saludo} Vi tu emprendimiento "${item.nombre}" en la plataforma PRENDER del CFP408 y me gustaría hacerte una consulta.`);
+    whatsappHref = `https://wa.me/${item.redes.whatsapp}?text=${msg}`;
   }
+  configureContactButton(whatsappBtn, whatsappHref, item.contactoProvisorio);
 
-  if (instagramBtn) {
-    if (item.redes && item.redes.instagram) {
-      instagramBtn.href = `https://instagram.com/${item.redes.instagram}`;
-      instagramBtn.style.display = 'inline-flex';
-    } else {
-      instagramBtn.style.display = 'none';
-    }
-  }
+  const instagramHref = item.redes && item.redes.instagram
+    ? `https://instagram.com/${item.redes.instagram}`
+    : '';
+  configureContactButton(instagramBtn, instagramHref, item.contactoProvisorio);
 
   // Mostrar modal, actualizar ARIA y enfocar botón de cierre
   modal.classList.add('modal--active');
