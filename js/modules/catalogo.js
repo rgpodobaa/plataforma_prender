@@ -17,7 +17,8 @@ function getPlaceholderImage(text, category) {
     'Belleza': '%23db2777',
     'Informática': '%234f46e5',
     'Herrería': '%23475569',
-    'Jardinería': '%2316a34a'
+    'Jardinería': '%2316a34a',
+    'Diseño': '%239333ea'
   };
   const bg = bgColors[category] || '%23e65c00';
   return `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect width="100%" height="100%" fill="${bg}"/><text x="50%" y="45%" font-family="sans-serif" font-size="28" font-weight="bold" fill="%23ffffff" text-anchor="middle" dominant-baseline="middle">${encodeURIComponent(text)}</text><text x="50%" y="60%" font-family="sans-serif" font-size="16" fill="%23f1f5f9" text-anchor="middle" dominant-baseline="middle">PRENDER • CFP408</text></svg>`;
@@ -33,8 +34,17 @@ export function initCatalogo() {
   let activeCategory = 'Todos';
   let searchTerm = '';
 
-  // 1. Obtener lista única de categorías
+  // 1. Obtener lista única de categorías y sincronizar métricas del Hero
   const categories = ['Todos', ...new Set(emprendimientos.map(item => item.categoria))];
+  const statEmprendimientos = document.getElementById('stat-emprendimientos');
+  const statRubros = document.getElementById('stat-rubros');
+
+  if (statEmprendimientos) {
+    statEmprendimientos.textContent = `+${emprendimientos.length}`;
+  }
+  if (statRubros) {
+    statRubros.textContent = String(categories.length - 1);
+  }
 
   // 2. Renderizar botones de filtro
   if (filtersContainer) {

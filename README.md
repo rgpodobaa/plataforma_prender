@@ -22,6 +22,7 @@ PRENDER es un proyecto interdisciplinario desarrollado en el **CFP408** con la p
   * Buscador en tiempo real por palabras clave.
   * Filtros por rubros profesionales.
   * Ventana modal interactiva con galería de fotos y contacto directo por WhatsApp/Instagram.
+  * Carrusel de testimonios con avance automático, controles manuales y pausa.
   * Validación y captura de datos en el formulario de convocatoria.
 
 ---
@@ -49,6 +50,7 @@ plataforma_prender/
 │       ├── hero.css
 │       ├── sobre-nosotros.css
 │       ├── catalogo.css
+│       ├── testimonios.css
 │       ├── modal-detalle.css
 │       ├── sumate.css
 │       └── footer.css
@@ -59,6 +61,7 @@ plataforma_prender/
 │   ├── modules/
 │   │   ├── navigation.js        # Menú móvil responsivo y navegación suave
 │   │   ├── catalogo.js          # Grilla dinámica, buscador y filtros
+│   │   ├── testimonios.js       # Carrusel accesible de testimonios
 │   │   ├── modal.js             # Ficha de detalle, galería e inyección de WhatsApp
 │   │   └── form.js              # Validación del formulario de inscripción
 │   └── main.js                  # Entrypoint de JavaScript

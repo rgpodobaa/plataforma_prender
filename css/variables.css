@@ -34,8 +34,8 @@
   --color-error: #ef4444;
 
   /* --- TIPOGRAFÍA --- */
-  --font-family-headings: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
-  --font-family-body: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+  --font-family-headings: 'Manrope', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-family-body: 'DM Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
   --font-family-hero-body: 'DM Sans', sans-serif;
   --font-family-hero-display: 'Manrope', sans-serif;
   
@@ -63,7 +63,7 @@
   --spacing-2xl: 4rem;    /* 64px */
 
   --container-max-width: 1200px;
-  --wide-shell-width: 1240px;
+  --wide-shell-width: 1200px;
   --header-height: 92px;
 
   /* --- BORDES Y SOMBRAS --- */
@@ -80,4 +80,10 @@
   /* --- TRANSICIONES --- */
   --transition-fast: 0.15s ease-in-out;
   --transition-normal: 0.25s ease-in-out;
+}
+
+@media (max-width: 820px) {
+  :root {
+    --header-height: 74px;
+  }
 }

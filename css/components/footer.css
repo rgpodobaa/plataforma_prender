@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SECCIÓN 7: FOOTER INSTITUCIONAL Y CRÉDITOS
+   SECCIÓN 7: FOOTER INSTITUCIONAL
    Responsable: Estudiante 7
    Prefijo BEM: .footer__*
    ========================================================================== */
@@ -13,7 +13,7 @@
 
 .footer__grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  grid-template-columns: 2fr 1fr 1fr;
   gap: var(--spacing-2xl);
   margin-bottom: var(--spacing-2xl);
 }
@@ -82,26 +82,44 @@
   color: var(--color-primary);
 }
 
-/* Columna de Créditos de Cursos CFP408 */
-.footer__courses-list {
+.footer__social-title {
+  margin-top: var(--spacing-lg);
+}
+
+.footer__socials {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: var(--spacing-sm);
 }
 
-.footer__course-item {
-  font-size: var(--font-size-xs);
-  color: #cbd5e1;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 8px 12px;
-  border-radius: var(--radius-sm);
-  border-left: 3px solid var(--color-primary);
+.footer__social-link {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background-color: var(--color-surface);
+  color: var(--color-secondary);
+  transition: var(--transition-fast);
 }
 
-.footer__course-item strong {
+.footer__social-link:hover {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  transform: translateY(-2px);
+}
+
+.footer__social-link:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.footer__social-icon {
+  width: 20px;
+  height: 20px;
   display: block;
-  color: #ffffff;
-  font-size: var(--font-size-sm);
 }
 
 /* Barra inferior / Copyright */

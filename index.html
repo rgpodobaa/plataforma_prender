@@ -36,7 +36,10 @@
         <div class="nav-panel">
           <ul class="nav__list">
             <li class="nav__item"><a href="#hero" class="nav__link nav__link--active">Inicio</a></li>
+            <li class="nav__item"><a href="#sobre-nosotros" class="nav__link">Sobre PRENDER</a></li>
             <li class="nav__item"><a href="#catalogo" class="nav__link">Emprendimientos</a></li>
+            <li class="nav__item"><a href="#testimonios" class="nav__link">Testimonios</a></li>
+            <li class="nav__item"><a href="#cfp-408" class="nav__link">CFP 408</a></li>
             <li class="nav__item"><a href="#sumate" class="nav__link">Sumá tu proyecto</a></li>
           </ul>
         </div>
@@ -65,13 +68,13 @@
         <div class="hero__content">
           <p class="hero__eyebrow">
             <span class="hero__eyebrow-dot" aria-hidden="true"></span>
-            Impulsado por el Centro de Formacion 408
+            Impulsado por el Centro de Formación 408
           </p>
 
           <h1 class="hero__title" id="hero-title">PREN<span class="hero__title-highlight">DER</span><span class="hero__title-spark" aria-hidden="true">✳</span></h1>
 
           <p class="hero__description">
-            Descubri y apoya los proyectos, productos artesanales y servicios profesionales impulsados por egresados y estudiantes del Centro.
+            Descubrí y apoyá los proyectos, productos artesanales y servicios profesionales impulsados por egresados y estudiantes del Centro.
           </p>
 
           <div class="hero__actions">
@@ -84,11 +87,11 @@
 
           <div class="hero__stats">
             <div class="hero__stat-item">
-              <span class="hero__stat-number">+20</span>
+              <span class="hero__stat-number" id="stat-emprendimientos">+20</span>
               <span class="hero__stat-label">Emprendimientos</span>
             </div>
             <div class="hero__stat-item">
-              <span class="hero__stat-number">8</span>
+              <span class="hero__stat-number" id="stat-rubros">9</span>
               <span class="hero__stat-label">Rubros Profesionales</span>
             </div>
             <div class="hero__stat-item">
@@ -206,7 +209,7 @@
             <h3 class="about__synergy-title">Un proyecto colaborativo del CFP408</h3>
           </div>
           <p class="about__synergy-text">
-            Esta plataforma fue creada en conjunto: el curso de <strong>Diseño de Páginas Web</strong> programa la arquitectura; el curso de <strong>Diseño Gráfico</strong> diseña el manual de marca e identidad visual; y el curso de <strong>Fotografía</strong> produce el material fotográfico de cada producto.
+            Esta plataforma nace del trabajo articulado entre los distintos cursos y trayectos formativos del <strong>CFP408</strong>, sumando saberes de diseño, desarrollo web, comunicación visual, producción de contenidos y oficios para impulsar cada emprendimiento de nuestra comunidad.
           </p>
         </div>
 
@@ -256,10 +259,231 @@
       </div>
     </section>
 
+    <!-- =====================================================================
+         SECCIÓN 5: TESTIMONIOS DE EMPRENDEDORES
+         Archivo CSS: css/components/testimonios.css
+         Archivo JS:  js/modules/testimonios.js
+         ===================================================================== -->
+    <section class="section testimonios" id="testimonios">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Experiencias PRENDER</span>
+          <h2 class="section-title">Historias que inspiran</h2>
+          <p class="section-subtitle">
+            Conocé cómo distintos emprendedores hacen crecer sus proyectos y aprovechan la plataforma.
+          </p>
+        </header>
+
+        <div class="testimonios__carousel" id="testimonios-carousel">
+          <div
+            class="testimonios__viewport"
+            id="testimonios-viewport"
+            role="region"
+            aria-roledescription="carrusel"
+            aria-label="Testimonios de emprendedores"
+          >
+            <div class="testimonios__track" id="testimonios-track">
+              <article class="testimonios__card" role="group" aria-roledescription="diapositiva" aria-label="Testimonio 1 de 6">
+                <blockquote class="testimonios__quote">
+                  <p>“Empezar con mi proyecto fue un desafío. En PRENDER pude contar qué hago y acercar mis productos a personas que todavía no me conocían.”</p>
+                </blockquote>
+                <footer class="testimonios__author">
+                  <span class="testimonios__logo" aria-hidden="true">RS</span>
+                  <div>
+                    <h3 class="testimonios__name">Rocío Suárez</h3>
+                    <p class="testimonios__business">Raíz Serena</p>
+                  </div>
+                </footer>
+              </article>
+
+              <article class="testimonios__card" role="group" aria-roledescription="diapositiva" aria-label="Testimonio 2 de 6">
+                <blockquote class="testimonios__quote">
+                  <p>“Mi taller fue creciendo de a poco. La plataforma me ayudó a ordenar la presentación de mis trabajos y compartirlos con más gente.”</p>
+                </blockquote>
+                <footer class="testimonios__author">
+                  <span class="testimonios__logo" aria-hidden="true">TS</span>
+                  <div>
+                    <h3 class="testimonios__name">Julián Ferreyra</h3>
+                    <p class="testimonios__business">Taller Sur</p>
+                  </div>
+                </footer>
+              </article>
+
+              <article class="testimonios__card" role="group" aria-roledescription="diapositiva" aria-label="Testimonio 3 de 6">
+                <blockquote class="testimonios__quote">
+                  <p>“A través de PRENDER pude mostrar mis productos y explicar cómo trabajo. Me resultó una forma sencilla de darle más visibilidad a mi emprendimiento.”</p>
+                </blockquote>
+                <footer class="testimonios__author">
+                  <span class="testimonios__logo" aria-hidden="true">DN</span>
+                  <div>
+                    <h3 class="testimonios__name">Micaela Ríos</h3>
+                    <p class="testimonios__business">Dulce Nube</p>
+                  </div>
+                </footer>
+              </article>
+
+              <article class="testimonios__card" role="group" aria-roledescription="diapositiva" aria-label="Testimonio 4 de 6">
+                <blockquote class="testimonios__quote">
+                  <p>“Con mi emprendimiento aprendí a resolver cada etapa con paciencia. Tener un espacio en PRENDER me permite presentar el proyecto de manera clara.”</p>
+                </blockquote>
+                <footer class="testimonios__author">
+                  <span class="testimonios__logo" aria-hidden="true">LN</span>
+                  <div>
+                    <h3 class="testimonios__name">Tomás Acuña</h3>
+                    <p class="testimonios__business">Línea Norte</p>
+                  </div>
+                </footer>
+              </article>
+
+              <article class="testimonios__card" role="group" aria-roledescription="diapositiva" aria-label="Testimonio 5 de 6">
+                <blockquote class="testimonios__quote">
+                  <p>“Mi proyecto nació de algo que disfruto hacer. PRENDER me dio un lugar para compartir esa historia junto con los productos que preparo.”</p>
+                </blockquote>
+                <footer class="testimonios__author">
+                  <span class="testimonios__logo" aria-hidden="true">PH</span>
+                  <div>
+                    <h3 class="testimonios__name">Camila Benítez</h3>
+                    <p class="testimonios__business">Punto de Hilo</p>
+                  </div>
+                </footer>
+              </article>
+
+              <article class="testimonios__card" role="group" aria-roledescription="diapositiva" aria-label="Testimonio 6 de 6">
+                <blockquote class="testimonios__quote">
+                  <p>“Cada encargo me enseña algo nuevo. En PRENDER puedo explicar el valor del trabajo artesanal y facilitar que más personas conozcan mi emprendimiento.”</p>
+                </blockquote>
+                <footer class="testimonios__author">
+                  <span class="testimonios__logo" aria-hidden="true">MV</span>
+                  <div>
+                    <h3 class="testimonios__name">Nicolás Duarte</h3>
+                    <p class="testimonios__business">Madera Viva</p>
+                  </div>
+                </footer>
+              </article>
+            </div>
+          </div>
+
+          <div class="testimonios__controls" aria-label="Controles del carrusel">
+            <button
+              class="testimonios__arrow"
+              type="button"
+              data-testimonios-prev
+              aria-label="Ver testimonio anterior"
+              aria-controls="testimonios-track"
+            >
+              <span aria-hidden="true">&larr;</span>
+            </button>
+            <button
+              class="testimonios__toggle"
+              type="button"
+              data-testimonios-toggle
+              aria-label="Pausar carrusel"
+              aria-controls="testimonios-track"
+              aria-pressed="false"
+            >
+              <svg class="testimonios__toggle-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  class="testimonios__toggle-play"
+                  d="M8 5v14l11-7z"
+                ></path>
+                <g class="testimonios__toggle-pause">
+                  <rect x="6" y="5" width="4" height="14" rx="1"></rect>
+                  <rect x="14" y="5" width="4" height="14" rx="1"></rect>
+                </g>
+              </svg>
+            </button>
+            <button
+              class="testimonios__arrow"
+              type="button"
+              data-testimonios-next
+              aria-label="Ver siguiente testimonio"
+              aria-controls="testimonios-track"
+            >
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- =====================================================================
-         SECCIÓN 5: SUMÁ TU EMPRENDIMIENTO (FORMULARIO HTML)
-         Responsable: Estudiante 5
+         SECCIÓN 6: CENTRO DE FORMACIÓN PROFESIONAL 408
+         Archivo CSS: css/components/cfp.css
+         ===================================================================== -->
+    <section class="section cfp" id="cfp-408" aria-labelledby="cfp-title">
+      <div class="container">
+        <h2 class="cfp__section-title" id="cfp-title">SOBRE NOSOTROS</h2>
+        <div class="cfp__card">
+          <div class="cfp__media">
+            <img class="cfp__logo" src="assets/images/ui/logo-cfp-408.svg" alt="Logo circular magenta del CFP 408" width="104" height="104" loading="lazy">
+            <figure class="cfp__photo">
+              <img
+                class="cfp__photo-image"
+                src="assets/images/ui/edificio-historico-jardin.jpg"
+                alt="Fachada de un edificio histórico frente a jardines; imagen ilustrativa, no es la sede del CFP 408"
+                width="960"
+                height="540"
+                loading="lazy"
+              >
+              <figcaption class="cfp__photo-credit">
+                Imagen ilustrativa; no corresponde a la sede del CFP 408.
+                Foto: <a href="https://commons.wikimedia.org/wiki/File:M%C3%BCnster,_F%C3%BCrstbisch%C3%B6fliches_Schloss_--_2018_--_1930-31_(cropped).jpg" target="_blank" rel="noopener noreferrer">Dietmar Rabich / Wikimedia Commons</a>,
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.
+              </figcaption>
+            </figure>
+            <div class="cfp__photo-details">
+              <h3 class="cfp__photo-details-title">Cursos y seminarios</h3>
+              <ul>
+                <li>Federación Gráfica Bonaerense</li>
+                <li>Títulos oficiales</li>
+                <li>Dirección de Cultura y Educación de la Provincia de Buenos Aires</li>
+                <li>IPFL</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cfp__content">
+            <span class="section-tag">Centro de Formación Profesional</span>
+            <h3 class="cfp__title">Formación para el trabajo</h3>
+            <p class="cfp__description">
+              Somos el Centro de Formación Profesional N.º 408. Hace 10 años ofrecemos cursos con salida laboral y títulos oficiales avalados por la Provincia de Buenos Aires, con profesionales a cargo de cada curso. Estamos ubicados en el centro de Lomas de Zamora.
+            </p>
+            <div class="cfp__courses">
+              <h4 class="cfp__courses-title">Cursos disponibles</h4>
+              <p class="cfp__duration">Duración: <strong>cuatrimestral</strong></p>
+              <ul class="cfp__courses-list">
+                <li><strong>Diseño gráfico</strong></li>
+                <li><strong>Serigrafía</strong></li>
+                <li><strong>Gestión de redes con orientación en video</strong></li>
+                <li><strong>Diseño de página web</strong></li>
+                <li><strong>Gestión de redes con orientación en fotografía</strong></li>
+                <li><strong>Habilidades digitales</strong></li>
+                <li><strong>Modelado e impresión 3D</strong></li>
+              </ul>
+            </div>
+            <div class="cfp__socials">
+              <a
+                class="cfp__social-link"
+                href="https://instagram.com/cfp408lomas"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Seguir al CFP 408 en Instagram, @cfp408lomas"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="18" cy="6" r="1" class="cfp__social-icon-dot" />
+                </svg>
+                <span>Instagram <strong>@cfp408lomas</strong></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================================
+         SECCIÓN 7: SUMÁ TU EMPRENDIMIENTO (FORMULARIO HTML)
          Archivo CSS: css/components/sumate.css
          Archivo JS:  js/modules/form.js
          ===================================================================== -->
@@ -275,125 +499,164 @@
             </p>
           </div>
 
-          <!-- Mensaje de feedback dinámico -->
-          <div id="form-feedback" class="form__feedback" role="alert"></div>
+          <div class="sumate__content">
+            <div class="sumate__form-column">
+              <!-- Mensaje de feedback dinámico -->
+              <div id="form-feedback" class="form__feedback" role="alert"></div>
 
-          <!-- Formulario HTML -->
-          <form id="sumate-form" class="form" novalidate>
-            <div class="form__row">
-              <div class="form__group">
-                <label for="form-nombre" class="form__label">
-                  Nombre y Apellido <span class="form__label-required">*</span>
-                </label>
-                <input 
-                  type="text" 
-                  id="form-nombre" 
-                  name="nombre" 
-                  class="form__input" 
-                  placeholder="Ej: María López" 
-                  required
-                >
-              </div>
+              <!-- Formulario HTML -->
+              <form id="sumate-form" class="form" novalidate>
+                <div class="form__row">
+                  <div class="form__group">
+                    <label for="form-nombre" class="form__label">
+                      Nombre y Apellido <span class="form__label-required">*</span>
+                    </label>
+                    <input 
+                      type="text" 
+                      id="form-nombre" 
+                      name="nombre" 
+                      class="form__input" 
+                      placeholder="Ej: María López" 
+                      required
+                    >
+                  </div>
 
-              <div class="form__group">
-                <label for="form-emprendimiento" class="form__label">
-                  Nombre del Emprendimiento <span class="form__label-required">*</span>
-                </label>
-                <input 
-                  type="text" 
-                  id="form-emprendimiento" 
-                  name="emprendimiento" 
-                  class="form__input" 
-                  placeholder="Ej: Dulces Aromas" 
-                  required
-                >
-              </div>
+                  <div class="form__group">
+                    <label for="form-emprendimiento" class="form__label">
+                      Nombre del Emprendimiento <span class="form__label-required">*</span>
+                    </label>
+                    <input 
+                      type="text" 
+                      id="form-emprendimiento" 
+                      name="emprendimiento" 
+                      class="form__input" 
+                      placeholder="Ej: Dulces Aromas" 
+                      required
+                    >
+                  </div>
+                </div>
+
+                <div class="form__row">
+                  <div class="form__group">
+                    <label for="form-curso" class="form__label">
+                      Curso Realizado en CFP408 <span class="form__label-required">*</span>
+                    </label>
+                    <select id="form-curso" name="curso" class="form__select" required>
+                      <option value="">Seleccioná tu curso...</option>
+                      <option value="Diseño gráfico">Diseño gráfico</option>
+                      <option value="Serigrafía">Serigrafía</option>
+                      <option value="Gestión de redes con orientación en video">Gestión de redes con orientación en video</option>
+                      <option value="Diseño de página web">Diseño de página web</option>
+                      <option value="Gestión de redes con orientación en fotografía">Gestión de redes con orientación en fotografía</option>
+                      <option value="Habilidades digitales">Habilidades digitales</option>
+                      <option value="Modelado e impresión 3D">Modelado e impresión 3D</option>
+                      <option value="Otro curso del CFP 408">Otro curso del CFP 408</option>
+                    </select>
+                  </div>
+
+                  <div class="form__group">
+                    <label for="form-categoria" class="form__label">
+                      Rubro Principal <span class="form__label-required">*</span>
+                    </label>
+                    <select id="form-categoria" name="categoria" class="form__select" required>
+                      <option value="">Seleccioná el rubro...</option>
+                      <option value="Diseño">Diseño</option>
+                      <option value="Gastronomía">Gastronomía</option>
+                      <option value="Carpintería">Carpintería</option>
+                      <option value="Textil">Textil</option>
+                      <option value="Electricidad">Electricidad</option>
+                      <option value="Belleza">Belleza</option>
+                      <option value="Informática">Informática</option>
+                      <option value="Herrería">Herrería</option>
+                      <option value="Jardinería">Jardinería</option>
+                      <option value="Otro">Otro</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form__row">
+                  <div class="form__group">
+                    <label for="form-telefono" class="form__label">
+                      WhatsApp de Contacto <span class="form__label-required">*</span>
+                    </label>
+                    <input 
+                      type="tel" 
+                      id="form-telefono" 
+                      name="telefono" 
+                      class="form__input" 
+                      placeholder="Ej: 11 1234-5678" 
+                      required
+                    >
+                    <span class="form__help">Para que los clientes puedan escribirte directamente.</span>
+                  </div>
+
+                  <div class="form__group">
+                    <label for="form-instagram" class="form__label">
+                      Usuario de Instagram (Opcional)
+                    </label>
+                    <input 
+                      type="text" 
+                      id="form-instagram" 
+                      name="instagram" 
+                      class="form__input" 
+                      placeholder="Ej: miemprendimiento.ok"
+                    >
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <label for="form-descripcion" class="form__label">
+                    Contanos sobre tus productos o servicios
+                  </label>
+                  <textarea 
+                    id="form-descripcion" 
+                    name="descripcion" 
+                    class="form__textarea" 
+                    placeholder="¿Qué ofrecés? ¿Cuál es tu especialidad? ¿Qué fotos te gustaría que tome el curso de fotografía?"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary form__submit-btn">
+                  Enviar Postulación a PRENDER
+                </button>
+              </form>
             </div>
 
-            <div class="form__row">
-              <div class="form__group">
-                <label for="form-curso" class="form__label">
-                  Curso Realizado en CFP408 <span class="form__label-required">*</span>
-                </label>
-                <select id="form-curso" name="curso" class="form__select" required>
-                  <option value="">Seleccioná tu curso...</option>
-                  <option value="Cocina y Pastelería">Cocina y Pastelería</option>
-                  <option value="Carpintería y Muebles">Carpintería y Muebles</option>
-                  <option value="Confección Textil">Confección Textil</option>
-                  <option value="Electricidad y Domótica">Electricidad y Domótica</option>
-                  <option value="Peluquería y Estética">Peluquería y Estética</option>
-                  <option value="Reparación de PC y Redes">Reparación de PC y Redes</option>
-                  <option value="Herrería y Soldadura">Herrería y Soldadura</option>
-                  <option value="Diseño Gráfico / Web">Diseño Gráfico / Web</option>
-                  <option value="Otro">Otro curso del CFP408</option>
-                </select>
-              </div>
-
-              <div class="form__group">
-                <label for="form-categoria" class="form__label">
-                  Rubro Principal <span class="form__label-required">*</span>
-                </label>
-                <select id="form-categoria" name="categoria" class="form__select" required>
-                  <option value="">Seleccioná el rubro...</option>
-                  <option value="Gastronomía">Gastronomía</option>
-                  <option value="Carpintería">Carpintería</option>
-                  <option value="Textil">Textil</option>
-                  <option value="Electricidad">Electricidad</option>
-                  <option value="Belleza">Belleza</option>
-                  <option value="Informática">Informática</option>
-                  <option value="Herrería">Herrería</option>
-                  <option value="Jardinería">Jardinería</option>
-                  <option value="Otro">Otro</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form__row">
-              <div class="form__group">
-                <label for="form-telefono" class="form__label">
-                  WhatsApp de Contacto <span class="form__label-required">*</span>
-                </label>
-                <input 
-                  type="tel" 
-                  id="form-telefono" 
-                  name="telefono" 
-                  class="form__input" 
-                  placeholder="Ej: 11 1234-5678" 
-                  required
+            <aside class="sumate__details" aria-label="Cómo llegar al CFP 408">
+              <section class="sumate__info-card sumate__map-card" aria-labelledby="sumate-map-title">
+                <div class="sumate__card-heading">
+                  <h3 class="sumate__card-title" id="sumate-map-title">Dónde estamos</h3>
+                  <p class="sumate__card-text">Fonrouge 326, Lomas de Zamora</p>
+                </div>
+                <iframe
+                  class="sumate__map"
+                  title="Mapa de Fonrouge 326, Lomas de Zamora"
+                  src="https://maps.google.com/maps?q=Fonrouge%20326%2C%20Lomas%20de%20Zamora&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen
+                ></iframe>
+                <a
+                  class="sumate__directions-link"
+                  href="https://www.google.com/maps/dir/?api=1&origin=Estaci%C3%B3n%20Lomas%20de%20Zamora&destination=Fonrouge%20326%2C%20Lomas%20de%20Zamora&travelmode=walking"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                <span class="form__help">Para que los clientes puedan escribirte directamente.</span>
-              </div>
+                  Ver camino a pie desde la estación de Lomas
+                </a>
+              </section>
 
-              <div class="form__group">
-                <label for="form-instagram" class="form__label">
-                  Usuario de Instagram (Opcional)
-                </label>
-                <input 
-                  type="text" 
-                  id="form-instagram" 
-                  name="instagram" 
-                  class="form__input" 
-                  placeholder="Ej: miemprendimiento.ok"
-                >
-              </div>
-            </div>
-
-            <div class="form__group">
-              <label for="form-descripcion" class="form__label">
-                Contanos sobre tus productos o servicios
-              </label>
-              <textarea 
-                id="form-descripcion" 
-                name="descripcion" 
-                class="form__textarea" 
-                placeholder="¿Qué ofrecés? ¿Cuál es tu especialidad? ¿Qué fotos te gustaría que tome el curso de fotografía?"
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn btn--primary form__submit-btn">
-              Enviar Postulación a PRENDER
-            </button>
-          </form>
+              <section class="sumate__info-card sumate__transit-card" aria-labelledby="sumate-transit-title">
+                <h3 class="sumate__card-title" id="sumate-transit-title">Cómo llegar en colectivo</h3>
+                <p class="sumate__card-text">
+                  Las líneas <strong>278 A</strong> y <strong>266</strong> (ramales 5, 2 y 3) pasan por la puerta y tienen parada en la esquina.
+                </p>
+                <p class="sumate__card-text">
+                  Si llegás a la estación de Lomas de Zamora, el centro queda a pocas cuadras. También podés tomar las líneas <strong>79</strong> o <strong>160</strong> por avenida Alsina: te dejan a dos cuadras.
+                </p>
+              </section>
+            </aside>
+          </div>
         </div>
 
       </div>
@@ -403,12 +666,11 @@
 
 
   <!-- =======================================================================
-       SECCIÓN 6: MODAL DE DETALLE DE EMPRENDIMIENTO
-       Responsable: Estudiante 6 / Integrador
+       MODAL DE DETALLE DE EMPRENDIMIENTO
        Archivo CSS: css/components/modal-detalle.css
        Archivo JS:  js/modules/modal.js
        ======================================================================= -->
-  <div class="modal" id="modal-detalle" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal" id="modal-detalle" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
     <div class="modal__backdrop" aria-hidden="true"></div>
     
     <div class="modal__content">
@@ -428,11 +690,10 @@
         <!-- Información Detallada y Enlaces de Contacto -->
         <div class="modal__info">
           <span class="modal__category"></span>
-          <h2 class="modal__title"></h2>
+          <h2 class="modal__title" id="modal-title"></h2>
           
           <div class="modal__meta">
             <p class="modal__entrepreneur"></p>
-            <p class="modal__course"></p>
           </div>
 
           <p class="modal__desc"></p>
@@ -440,10 +701,19 @@
           <div class="modal__actions">
             <h3 class="modal__contact-title">Contactar Directamente:</h3>
             <a href="#" target="_blank" rel="noopener noreferrer" class="btn modal__btn-whatsapp">
-              <span>💬 Escribir por WhatsApp</span>
+              <svg class="modal__contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+                <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.875 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"></path>
+              </svg>
+              <span>Escribir por WhatsApp</span>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer" class="btn modal__btn-instagram">
-              <span>📷 Ver en Instagram</span>
+              <svg class="modal__contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"></rect>
+                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle>
+                <circle cx="17.5" cy="6.5" r="1.25" fill="currentColor"></circle>
+              </svg>
+              <span>Ver en Instagram</span>
             </a>
           </div>
         </div>
@@ -453,7 +723,7 @@
 
 
   <!-- =======================================================================
-       SECCIÓN 7: FOOTER INSTITUCIONAL Y CRÉDITOS
+       SECCIÓN 8: FOOTER INSTITUCIONAL
        Responsable: Estudiante 7
        Archivo CSS: css/components/footer.css
        ======================================================================= -->
@@ -477,6 +747,8 @@
             <li><a href="#hero" class="footer__link">Inicio</a></li>
             <li><a href="#sobre-nosotros" class="footer__link">Sobre PRENDER</a></li>
             <li><a href="#catalogo" class="footer__link">Emprendimientos</a></li>
+            <li><a href="#testimonios" class="footer__link">Testimonios</a></li>
+            <li><a href="#cfp-408" class="footer__link">CFP 408</a></li>
             <li><a href="#sumate" class="footer__link">Sumar mi Proyecto</a></li>
           </ul>
         </div>
@@ -486,29 +758,40 @@
           <h3 class="footer__col-title">Institucional</h3>
           <ul class="footer__links">
             <li><a href="https://cfp408.edu.ar" target="_blank" rel="noopener noreferrer" class="footer__link">Sitio Web CFP408</a></li>
-            <li><a href="#sobre-nosotros" class="footer__link">Cursos y Talleres</a></li>
+            <li><a href="#cfp-408" class="footer__link">Cursos y Talleres</a></li>
             <li><a href="#sumate" class="footer__link">Bolsa de Trabajo</a></li>
           </ul>
-        </div>
 
-        <!-- Columna 4: Créditos a los Cursos del CFP408 -->
-        <div class="footer__col">
-          <h3 class="footer__col-title">Créditos y Trabajo en Equipo</h3>
-          <div class="footer__courses-list">
-            <div class="footer__course-item">
-              <strong>💻 Diseño de Páginas Web</strong>
-              <span>Arquitectura, maquetado e integración</span>
-            </div>
-            <div class="footer__course-item">
-              <strong>🎨 Diseño Gráfico</strong>
-              <span>Manual de marca e identidad visual</span>
-            </div>
-            <div class="footer__course-item">
-              <strong>📸 Curso de Fotografía</strong>
-              <span>Fotografía de productos y cobertura</span>
-            </div>
+          <h4 class="footer__col-title footer__social-title">Redes sociales</h4>
+          <div class="footer__socials">
+            <!-- Enlace provisorio de Facebook: reemplazar por la URL oficial si corresponde. -->
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social-link"
+              aria-label="Facebook del CFP 408 (enlace de prueba)"
+            >
+              <svg class="footer__social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.6-1.6h1.7V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7v3h2.8v8z"></path>
+              </svg>
+            </a>
+            <a
+              href="https://instagram.com/cfp408lomas"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social-link"
+              aria-label="Instagram del CFP 408 (@cfp408lomas)"
+            >
+              <svg class="footer__social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <rect x="3.25" y="3.25" width="17.5" height="17.5" rx="5" fill="none" stroke="currentColor" stroke-width="2"></rect>
+                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle>
+                <circle cx="17.5" cy="6.5" r="1.25" fill="currentColor"></circle>
+              </svg>
+            </a>
           </div>
         </div>
+
       </div>
 
       <!-- Barra Inferior -->

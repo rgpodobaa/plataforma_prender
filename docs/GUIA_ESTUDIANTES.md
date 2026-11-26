@@ -23,9 +23,10 @@ Cada estudiante se encargará del diseño y maquetado de **una sección específ
 | **2. Hero (Portada)** | Estudiante 2 | `css/components/hero.css` | `<!-- SECCIÓN 2: HERO -->` |
 | **3. Sobre PRENDER** | Estudiante 3 | `css/components/sobre-nosotros.css` | `<!-- SECCIÓN 3: SOBRE PRENDER -->` |
 | **4. Catálogo / Cards** | Estudiante 4 | `css/components/catalogo.css` | `<!-- SECCIÓN 4: CATÁLOGO -->` |
-| **5. Formulario Sumate** | Estudiante 5 | `css/components/sumate.css` | `<!-- SECCIÓN 5: FORMULARIO SUMATE -->` |
-| **6. Modal de Detalle** | Estudiante 6 | `css/components/modal-detalle.css` | `<!-- SECCIÓN 6: MODAL -->` |
-| **7. Footer Institucional**| Estudiante 7 | `css/components/footer.css` | `<!-- SECCIÓN 7: FOOTER -->` |
+| **5. Testimonios** | Estudiante 5 | `css/components/testimonios.css` | `<!-- SECCIÓN 5: TESTIMONIOS -->` |
+| **6. Formulario Sumate** | Estudiante 6 | `css/components/sumate.css` | `<!-- SECCIÓN 6: FORMULARIO SUMATE -->` |
+| **7. Modal de Detalle** | Estudiante 7 | `css/components/modal-detalle.css` | `<!-- SECCIÓN 7: MODAL -->` |
+| **8. Footer Institucional**| Estudiante 8 | `css/components/footer.css` | `<!-- SECCIÓN 8: FOOTER -->` |
 
 > ⚠️ **REGLA DE ORO:** 
 > - **SOLO edita tu archivo CSS asignado dentro de `css/components/`.**
@@ -69,6 +70,7 @@ Para evitar que tu CSS afecte la sección de otro compañero, todas las clases d
 * **Hero**: `.hero__title`, `.hero__description`, `.hero__actions`
 * **Sobre Nosotros**: `.about__card`, `.about__card-title`, `.about__card-icon`
 * **Catálogo**: `.catalogo__card`, `.catalogo__filter-btn`, `.catalogo__search-input`
+* **Testimonios**: `.testimonios__card`, `.testimonios__quote`, `.testimonios__controls`
 * **Formulario**: `.form__group`, `.form__label`, `.form__input`
 
 Nunca uses clases genéricas como `.title`, `.boton`, `.card` o `.texto` sin prefijo.

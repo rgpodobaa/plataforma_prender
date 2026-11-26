@@ -1,0 +1,205 @@
+/* ==========================================================================
+   SECCIÓN 5: TESTIMONIOS DE EMPRENDEDORES
+   Prefijo BEM: .testimonios__*
+   ========================================================================== */
+
+.testimonios {
+  background-color: var(--color-surface);
+}
+
+.testimonios__carousel {
+  position: relative;
+}
+
+.testimonios__viewport {
+  overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.testimonios__track {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.testimonios__card {
+  flex: 0 0 calc((100% - (var(--spacing-sm) * 2)) / 3);
+  min-width: 0;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--spacing-xl);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  scroll-snap-align: start;
+}
+
+.testimonios__quote {
+  position: relative;
+  padding-top: var(--spacing-lg);
+}
+
+.testimonios__quote::before {
+  content: '“';
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  color: var(--color-primary);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+}
+
+.testimonios__quote p {
+  color: var(--color-text-main);
+  font-size: var(--font-size-base);
+  line-height: 1.7;
+}
+
+.testimonios__author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.testimonios__logo {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+}
+
+.testimonios__name {
+  color: var(--color-secondary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+}
+
+.testimonios__business {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.testimonios__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-xl);
+}
+
+.testimonios__arrow {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background-color: var(--color-surface);
+  color: var(--color-secondary);
+  font-size: var(--font-size-lg);
+  transition: var(--transition-fast);
+}
+
+.testimonios__arrow:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.testimonios__toggle {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background-color: var(--color-surface);
+  color: var(--color-text-main);
+  transition: var(--transition-fast);
+}
+
+.testimonios__toggle-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.testimonios__toggle-play,
+.testimonios__toggle-pause {
+  transform-origin: center;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.testimonios__toggle-play {
+  opacity: 0;
+  transform: scale(0.65);
+}
+
+.testimonios__toggle-pause {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.testimonios__toggle[aria-pressed="true"] .testimonios__toggle-play {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.testimonios__toggle[aria-pressed="true"] .testimonios__toggle-pause {
+  opacity: 0;
+  transform: scale(0.65);
+}
+
+.testimonios__toggle:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.testimonios__arrow:focus-visible,
+.testimonios__toggle:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .testimonios__card {
+    flex-basis: calc((100% - var(--spacing-sm)) / 2);
+    padding: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonios__card {
+    flex-basis: 100%;
+    min-height: 240px;
+  }
+
+  .testimonios__controls {
+    gap: var(--spacing-sm);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonios__viewport {
+    scroll-behavior: auto;
+  }
+
+  .testimonios__arrow,
+  .testimonios__toggle,
+  .testimonios__toggle-play,
+  .testimonios__toggle-pause {
+    transition: none;
+  }
+}

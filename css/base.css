@@ -24,6 +24,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+h1, h2, h3, h4 {
+  font-family: var(--font-family-headings);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -62,6 +66,11 @@ button {
 }
 
 /* --- SECCIONES GLOBALES --- */
+.section,
+section[id] {
+  scroll-margin-top: var(--header-height);
+}
+
 .section {
   padding-top: var(--spacing-2xl);
   padding-bottom: var(--spacing-2xl);
