@@ -34,12 +34,22 @@ export function openModal(item) {
   const thumbsContainer = modal.querySelector('.modal__thumbs');
   const whatsappBtn = modal.querySelector('.modal__btn-whatsapp');
   const instagramBtn = modal.querySelector('.modal__btn-instagram');
+  const metaEl = modal.querySelector('.modal__meta');
+  const actionsEl = modal.querySelector('.modal__actions');
+  const contactTitleEl = actionsEl && actionsEl.querySelector('.modal__contact-title');
   const closeBtn = modal.querySelector('.modal__close');
 
   // Inyección de textos
   if (titleEl) titleEl.textContent = item.nombre;
   if (catEl) catEl.textContent = item.categoria;
-  if (entrepreneurEl) entrepreneurEl.textContent = `Emprendedor/a: ${item.emprendedor}`;
+  if (entrepreneurEl) {
+    entrepreneurEl.textContent = item.emprendedor ? `Emprendedor/a: ${item.emprendedor}` : '';
+    entrepreneurEl.hidden = !item.emprendedor;
+  }
+  if (metaEl) {
+    metaEl.hidden = !item.emprendedor;
+    metaEl.style.display = item.emprendedor ? '' : 'none';
+  }
   if (descEl) {
     descEl.textContent = item.descripcionLarga;
     descEl.scrollTop = 0;
@@ -95,8 +105,15 @@ export function openModal(item) {
       const msg = encodeURIComponent(`${saludo} Vi tu emprendimiento "${item.nombre}" en la plataforma PRENDER del CFP408 y me gustaría hacerte una consulta.`);
       whatsappBtn.href = `https://wa.me/${item.redes.whatsapp}?text=${msg}`;
       whatsappBtn.style.display = 'inline-flex';
+      whatsappBtn.removeAttribute('aria-disabled');
+      whatsappBtn.removeAttribute('tabindex');
+      whatsappBtn.querySelector('span').textContent = 'Escribir por WhatsApp';
     } else {
-      whatsappBtn.style.display = 'none';
+      whatsappBtn.removeAttribute('href');
+      whatsappBtn.setAttribute('aria-disabled', 'true');
+      whatsappBtn.setAttribute('tabindex', '-1');
+      whatsappBtn.style.display = 'inline-flex';
+      whatsappBtn.querySelector('span').textContent = 'WhatsApp: dato pendiente';
     }
   }
 
@@ -104,9 +121,25 @@ export function openModal(item) {
     if (item.redes && item.redes.instagram) {
       instagramBtn.href = `https://instagram.com/${item.redes.instagram}`;
       instagramBtn.style.display = 'inline-flex';
+      instagramBtn.removeAttribute('aria-disabled');
+      instagramBtn.removeAttribute('tabindex');
+      instagramBtn.querySelector('span').textContent = 'Ver en Instagram';
     } else {
-      instagramBtn.style.display = 'none';
+      instagramBtn.removeAttribute('href');
+      instagramBtn.setAttribute('aria-disabled', 'true');
+      instagramBtn.setAttribute('tabindex', '-1');
+      instagramBtn.style.display = 'inline-flex';
+      instagramBtn.querySelector('span').textContent = 'Instagram: dato pendiente';
     }
+  }
+
+  if (actionsEl) {
+    actionsEl.hidden = false;
+    actionsEl.style.display = '';
+  }
+  if (contactTitleEl) {
+    const hasContact = Boolean(item.redes && (item.redes.whatsapp || item.redes.instagram));
+    contactTitleEl.textContent = hasContact ? 'Contactar Directamente:' : 'Datos de contacto pendientes:';
   }
 
   // Mostrar modal, actualizar ARIA y enfocar botón de cierre

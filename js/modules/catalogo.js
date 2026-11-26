@@ -84,7 +84,7 @@ export function initCatalogo() {
       const matchSearch = 
         item.nombre.toLowerCase().includes(searchTerm) ||
         item.descripcionCorta.toLowerCase().includes(searchTerm) ||
-        item.emprendedor.toLowerCase().includes(searchTerm) ||
+        (item.emprendedor || '').toLowerCase().includes(searchTerm) ||
         item.categoria.toLowerCase().includes(searchTerm);
 
       return matchCategory && matchSearch;
@@ -120,7 +120,7 @@ export function initCatalogo() {
           </div>
           <div class="catalogo__card-body">
             <h3 class="catalogo__card-title">${item.nombre}</h3>
-            <p class="catalogo__card-author">Por ${item.emprendedor}</p>
+            ${item.emprendedor ? `<p class="catalogo__card-author">Por ${item.emprendedor}</p>` : ''}
             <p class="catalogo__card-desc">${item.descripcionCorta}</p>
             <div class="catalogo__card-footer">
               <button type="button" class="btn btn--primary catalogo__card-btn js-open-modal" data-id="${item.id}">

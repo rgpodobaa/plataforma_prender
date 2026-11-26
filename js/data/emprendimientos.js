@@ -375,5 +375,31 @@ export const emprendimientos = [
       email: "hojasalviento@ejemplo.com"
     },
     destacado: true
+  },
+  {
+    id: "sherpa-serigrafia",
+    nombre: "SHERPA.SERIGRAFIA",
+    categoria: "Textil",
+    descripcionCorta: "Indumentaria personalizada mediante serigrafía, con remeras y gorras estampadas.",
+    descripcionLarga: "Prendas personalizadas mediante serigrafía, como remeras y gorras estampadas, según los productos que aparecen en la imagen.",
+    emprendedor: "Marcos César Rafael Casanave",
+    fotoPrincipal: "assets/images/emprendimientos/sherpa-serigrafia/principal.jpg",
+    galeria: [],
+    redes: {},
+    destacado: true
+  },
+  {
+    id: "tinta-paper",
+    nombre: "TINTA PAPER",
+    categoria: "Diseño",
+    descripcionCorta: "Souvenirs, cuadros y regalos personalizados para eventos y fechas especiales.",
+    descripcionLarga: "Souvenirs, cuadros y regalos personalizados para eventos y fechas especiales.",
+    emprendedor: "@arcoiris.decokids",
+    fotoPrincipal: "assets/images/emprendimientos/tinta-paper/principal.jpg",
+    galeria: [],
+    redes: {
+      instagram: "arcoiris.decokids"
+    },
+    destacado: true
   }
 ];
